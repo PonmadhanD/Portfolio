@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponmadhan D | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-gray-900/70 shadow-lg border-b border-gray-700">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-4">
+      
+      <!-- Logo / Name with gradient text -->
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient-text">
+        🦇 Ponmadhan Portfolio
+      </h1>
+  
+      <!-- Navigation Menu -->
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-teal-400 transition-colors duration-300">Home</a>
+        <a href="#about" class="hover:text-teal-400 transition-colors duration-300">About</a>
+        <a href="#experience" class="hover:text-teal-400 transition-colors duration-300">Experience</a>
+        <a href="#skills" class="hover:text-teal-400 transition-colors duration-300">Skills</a>
+        <a href="#services" class="hover:text-teal-400 transition-colors duration-300">Services</a>
+        <a href="#portfolio" class="hover:text-teal-400 transition-colors duration-300">My Works</a>
+        <a href="#contact" class="hover:text-teal-400 transition-colors duration-300">Contact</a>
+      </nav>
+  
+      <!-- Connect with me section -->
+      <div class="mt-4 md:mt-0 flex items-center space-x-4 text-sm text-gray-300">
+        <a href="https://github.com/PonmadhanD" target="_blank" class="flex items-center space-x-1 text-gray-300 hover:text-teal-400 transition-colors duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.334-1.756-1.334-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.932 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.653 1.653.243 2.873.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.624-5.48 5.922.43.372.813 1.106.813 2.23 0 1.61-.015 2.91-.015 3.305 0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.628-5.373-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ponmadhan-d" target="_blank" class="flex items-center space-x-1 text-gray-300 hover:text-teal-400 transition-colors duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.34 6 7.68V24h-5V15.7c0-2.05-.04-4.7-2.87-4.7-2.87 0-3.3 2.23-3.3 4.55V24h-5V8z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Tailwind Custom Gradient Animation -->
+  <style>
+    @keyframes gradientText {
+      0%,100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .animate-gradient-text {
+      background-size: 200% 200%;
+      animation: gradientText 5s ease infinite;
+    }
+  </style>
+  
+  
+
+<!-- Hero Section -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-gray-900 relative overflow-hidden">
+
+    <!-- Gradient border profile image with hover animation -->
+    <div class="relative inline-block mb-8 group">
+      <div class="w-64 h-64 md:w-72 md:h-72 rounded-full p-1 bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-600 shadow-2xl transition-transform transform group-hover:scale-105">
+        <img src="Images/Madhan (2).jpg" alt="Profile Picture" 
+             class="w-full h-full object-cover rounded-full border-4 border-gray-900 shadow-inner shadow-black/50 transition-all duration-500 group-hover:shadow-lg">
+      </div>
+      <!-- Optional subtle glowing ring -->
+      <div class="absolute inset-0 rounded-full ring-2 ring-teal-400/50 animate-pulse pointer-events-none"></div>
+    </div>
+  
+    <!-- Text content with glassmorphism effect -->
+    <div class="backdrop-blur-sm bg-white/10 p-6 rounded-2xl shadow-xl max-w-xl">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-2 animate-fadeIn">Hello, I'm Ponmadhan</h2>
+      <p class="mt-2 text-lg text-gray-300 animate-fadeIn delay-200"><b>Junior Web Developer & Data Analyst</b></p><p>Specializing in IoT Solutions</p>
+      <p class="mt-2 text-teal-400 italic animate-fadeIn delay-400">Bridging Code & Connected Devices</p>
+  
+      <div class="mt-6 space-x-4 animate-fadeIn delay-600">
+        <a href="#portfolio" class="group relative inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-teal-600">
+            View My Work
+            <span class="ml-2 transform translate-x-0 opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">➔</span>
+          </a>
+        <a href="Images/RESUME_Madhan.pdf" class="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 transition-all duration-300">Download Resume</a>
+      </div>
+    </div>
+  
+  </section>
+  
+  <!-- Add Tailwind Animations (if not already included) -->
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .animate-fadeIn { animation: fadeIn 0.8s ease forwards; }
+    .animate-fadeIn.delay-200 { animation-delay: 0.2s; }
+    .animate-fadeIn.delay-400 { animation-delay: 0.4s; }
+    .animate-fadeIn.delay-600 { animation-delay: 0.6s; }
+  </style>
+  
+  
+  <!-- About Section -->
+<section id="about" class="py-20 bg-gray-900 text-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 text-center">About Me</h2>
+  
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+  
+        <!-- About Text -->
+        <div class="space-y-6">
+          <p class="text-lg md:text-xl leading-relaxed">
+            I'm <span class="font-semibold text-teal-400">Ponmadhan D</span>, a passionate Junior Web Developer and Data Analyst specializing in IoT systems. I'm currently pursuing <strong>Computer Science with IoT specialization at Sri Krishna College of Technology</strong>, graduating in 2027.
+          </p>
+          <p class="text-lg md:text-xl leading-relaxed">
+            I love working with innovative technologies that bridge the gap between the digital and physical worlds.
+          </p>
+  
+          <!-- Languages -->
+          <div>
+            <p class="font-semibold text-teal-400 mb-2">Languages:</p>
+            <ul class="list-disc list-inside ml-4 space-y-1 text-gray-300">
+              <li>Tamil (Native)</li>
+              <li>English (Fluent)</li>
+            </ul>
+          </div>
+  
+          <!-- Personal Interests -->
+          <div>
+            <p class="font-semibold text-teal-400 mb-2">Personal Interests:</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-2 bg-gray-800 rounded-lg p-2 hover:bg-teal-500 hover:text-white transition">
+                <span class="text-teal-400">🎮</span>
+                <span>Gaming</span>
+              </li>
+              <li class="flex items-center space-x-2 bg-gray-800 rounded-lg p-2 hover:bg-teal-500 hover:text-white transition">
+                <span class="text-teal-400">🎬</span>
+                <span>Movies</span>
+              </li>
+              <li class="flex items-center space-x-2 bg-gray-800 rounded-lg p-2 hover:bg-teal-500 hover:text-white transition">
+                <span class="text-teal-400">✍️</span>
+                <span>Writing Tech Articles</span>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+  
+        <!-- About Image / Illustration -->
+        <div class="flex justify-center">
+          <div class="w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-teal-400">
+            <img src="Images/Madhan.jpg" alt="Ponmadhan" class="w-full h-full object-cover transition-transform transform hover:scale-105">
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Experience -->
+  <!-- Experience Section (Animated Timeline) -->
+<section id="experience" class="py-20 bg-gray-900 px-6 relative">
+    <div class="max-w-6xl mx-auto">
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 text-center animate-fadeIn">
+        Work Experience
+      </h2>
+  
+      <!-- Timeline Wrapper -->
+      <div class="relative grid md:grid-cols-1 gap-12">
+  
+        <!-- Vertical Timeline Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-teal-400 hidden md:block"></div>
+  
+        <!-- Timeline Items -->
+        <!-- Card 1 -->
+        <div class="timeline-item md:flex md:justify-between items-center w-full relative animate-slideInLeft">
+          <div class="md:w-1/2 md:pr-12">
+            <div class="p-6 bg-gray-800 rounded-2xl shadow-2xl border-l-4 border-teal-400 hover:-translate-y-3 transform transition duration-500">
+              <div class="flex items-center mb-3 space-x-2">
+                <span class="text-teal-400 text-xl">💻</span>
+                <h3 class="font-bold text-lg">Software Intern - Zidio Development Company</h3>
+              </div>
+              <p class="text-sm text-gray-300 mb-2">2024 | Full-stack Development</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>React, Node.js, MongoDB, JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="timeline-item md:flex md:justify-between items-center w-full relative animate-slideInRight">
+          <div class="md:w-1/2 md:pl-12 md:ml-auto">
+            <div class="p-6 bg-gray-800 rounded-2xl shadow-2xl border-r-4 border-teal-400 hover:-translate-y-3 transform transition duration-500">
+              <div class="flex items-center mb-3 space-x-2 justify-end">
+                <span class="text-teal-400 text-xl">☁️</span>
+                <h3 class="font-bold text-lg">Software Intern - CloudVision</h3>
+              </div>
+              <p class="text-sm text-gray-300 mb-2 text-right">2024 | Digital Transformation</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 text-right">
+                <li>Cloud Technologies, Data Migration, System Integration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="timeline-item md:flex md:justify-between items-center w-full relative animate-slideInLeft">
+          <div class="md:w-1/2 md:pr-12">
+            <div class="p-6 bg-gray-800 rounded-2xl shadow-2xl border-l-4 border-teal-400 hover:-translate-y-3 transform transition duration-500">
+              <div class="flex items-center mb-3 space-x-2">
+                <span class="text-teal-400 text-xl">🛠️</span>
+                <h3 class="font-bold text-lg">Hardware Intern - Digibytz</h3>
+              </div>
+              <p class="text-sm text-gray-300 mb-2">2023 | IoT Hardware & Embedded Systems</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>IoT Development, Embedded Systems, Sensors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tailwind Animations -->
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 1s ease forwards; }
+  
+    @keyframes slideInLeft {
+      0% { opacity: 0; transform: translateX(-100px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .animate-slideInLeft { animation: slideInLeft 1s ease forwards; }
+  
+    @keyframes slideInRight {
+      0% { opacity: 0; transform: translateX(100px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .animate-slideInRight { animation: slideInRight 1s ease forwards; }
+  </style>
+  
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-900 text-gray-200 px-6">
+    <div class="max-w-6xl mx-auto">
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 text-center animate-fadeIn">
+        Skills & Expertise
+      </h2>
+  
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+  
+        <!-- Each card with unique hover animation -->
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:rotate-3 hover:scale-105 transition duration-500">
+          <img src="Images/js.png" alt="JavaScript" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">JavaScript</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:-rotate-3 hover:scale-105 transition duration-500">
+          <img src="Images/React.png" alt="React" class="w-16 h-16 mb-4 animate-pulse">
+          <p class="text-lg font-semibold">React</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:translate-y-[-6px] hover:scale-110 transition duration-500">
+          <img src="Images/flutter-icon.png" alt="Flutter" class="w-16 h-16 mb-4 animate-bounce">
+          <p class="text-lg font-semibold">Flutter</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:skew-y-3 hover:scale-105 transition duration-500">
+          <img src="Images/html.png" alt="HTML/CSS" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">HTML / CSS</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-110 hover:shadow-teal-500/50 transition duration-500">
+          <img src="Images/nodejs.png" alt="Node.js" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">Node.js</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:rotate-6 hover:scale-110 transition duration-500">
+          <img src="Images/mongodb.png" alt="MongoDB" class="w-16 h-16 mb-4 animate-spin-slow">
+          <p class="text-lg font-semibold">MongoDB</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:-rotate-6 hover:scale-110 transition duration-500">
+          <img src="Images/sql-server.png" alt="SQL" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">SQL</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 hover:translate-x-2 transition duration-500">
+          <img src="Images/cpp.png" alt="C/C++" class="w-16 h-16 mb-4 animate-wiggle">
+          <p class="text-lg font-semibold">C / C++</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-110 hover:shadow-purple-500/40 transition duration-500">
+          <img src="Images/iot.png" alt="IoT" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">IoT Systems</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:rotate-12 hover:scale-105 transition duration-500">
+          <img src="Images/data_an.png" alt="Data Analytics" class="w-16 h-16 mb-4 animate-pulse">
+          <p class="text-lg font-semibold">Data Analytics</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 hover:skew-x-3 transition duration-500">
+          <img src="Images/visual-data.png" alt="Data Visualization" class="w-16 h-16 mb-4 animate-bounce">
+          <p class="text-lg font-semibold">Data Visualization</p>
+        </div>
+  
+        <div class="skill-card flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 hover:translate-y-2 transition duration-500">
+          <img src="Images/writing.png" alt="Technical Writing" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold">Technical Writing</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Custom Animations -->
+  <style>
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 6s linear infinite;
+    }
+  
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .animate-wiggle {
+      animation: wiggle 1s ease-in-out infinite;
+    }
+  </style>
+  
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-900 text-gray-200 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 drop-shadow-lg">
+        My Services
+      </h2>
+  
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-2 gap-10">
+  
+        <!-- Service Card -->
+        <div class="relative overflow-hidden rounded-2xl shadow-xl group hover:scale-105 transition duration-500 border border-teal-400/20 hover:border-teal-400/60">
+          <img src="Images/ui-ux.jpeg" alt="UI/UX Design" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-left">
+            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 drop-shadow-lg">
+              UI / UX Design
+            </h3>
+            <p class="text-gray-200 text-lg">Wireframing, Prototyping, Responsive Design</p>
+          </div>
+        </div>
+  
+        <div class="relative overflow-hidden rounded-2xl shadow-xl group hover:scale-105 transition duration-500 border border-purple-400/20 hover:border-purple-400/60">
+          <img src="Images/web-dev.jpg" alt="Web Development" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-left">
+            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 drop-shadow-lg">
+              Web Development
+            </h3>
+            <p class="text-gray-200 text-lg">MERN stack, REST APIs</p>
+          </div>
+        </div>
+  
+        <div class="relative overflow-hidden rounded-2xl shadow-xl group hover:scale-105 transition duration-500 border border-green-400/20 hover:border-green-400/60">
+          <img src="Images/data-ana.jpg" alt="Data Analytics" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-left">
+            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-500 drop-shadow-lg">
+              Data Analytics
+            </h3>
+            <p class="text-gray-200 text-lg">Dashboards, Statistical Analysis, Reporting</p>
+          </div>
+        </div>
+  
+        <div class="relative overflow-hidden rounded-2xl shadow-xl group hover:scale-105 transition duration-500 border border-pink-400/20 hover:border-pink-400/60">
+          <img src="Images/tech-writ.jpg" alt="Technical Writing" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-left">
+            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500 drop-shadow-lg">
+              Technical Writing
+            </h3>
+            <p class="text-gray-200 text-lg">Documentation, Research Papers, Articles</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-900 text-gray-200 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+  
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 drop-shadow-lg">
+        My Works
+      </h2>
+  
+      <!-- Portfolio Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+  
+        <!-- Project Card -->
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-105 hover:shadow-teal-500/40 transition duration-500">
+          <img src="Images/ai-tra.jpg" alt="Traffic Management System" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-bold text-white mb-2">AI Traffic Management System</h3>
+            <p class="text-gray-400 text-sm">
+              Smart IoT solution with AI algorithms, thermal imaging, and real-time monitoring.
+            </p>
+          </div>
+        </div>
+  
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-105 hover:shadow-purple-500/40 transition duration-500">
+          <img src="Images/e-com.webp" alt="E-commerce App" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-bold text-white mb-2">E-Commerce Web Application</h3>
+            <p class="text-gray-400 text-sm">
+              MERN stack e-commerce platform with secure payments and admin dashboard.
+            </p>
+          </div>
+        </div>
+  
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-105 hover:shadow-green-500/40 transition duration-500">
+          <img src="Images/dashboard_example.jpg" alt="Data Dashboard" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-bold text-white mb-2">Data Visualization Dashboard</h3>
+            <p class="text-gray-400 text-sm">
+              Interactive dashboard with real-time analytics and visual insights.
+            </p>
+          </div>
+        </div>
+  
+        <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-105 hover:shadow-pink-500/40 transition duration-500">
+          <img src="Images/text-cl.webp" alt="Text Classification Model" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-bold text-white mb-2">Text Classification Model</h3>
+            <p class="text-gray-400 text-sm">
+              Machine learning model for classifying text data into categories with high accuracy.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-gray-200 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-teal-400 mb-12 drop-shadow-lg">
+        Get In Touch
+      </h2>
+  
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+  
+        <!-- Contact Form -->
+        <form id="contact-form" class="space-y-5 bg-gray-800/70 backdrop-blur-lg p-8 rounded-2xl shadow-2xl text-left relative overflow-hidden">
+          <input type="text" name="name" placeholder="Your Name" required
+                 class="w-full p-4 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-teal-400 focus:outline-none transition">
+          <input type="email" name="email" placeholder="Your Email" required
+                 class="w-full p-4 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-teal-400 focus:outline-none transition">
+          <input type="text" name="subject" placeholder="Subject" required
+                 class="w-full p-4 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-teal-400 focus:outline-none transition">
+          <textarea name="message" placeholder="Message" rows="5" required
+                    class="w-full p-4 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-teal-400 focus:outline-none transition"></textarea>
+  
+          <button type="submit" id="send-btn"
+                  class="w-full py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 hover:shadow-teal-500/50 transition duration-300 relative overflow-hidden">
+            Send Message
+          </button>
+        </form>
+  
+        <!-- Contact Info -->
+        <div class="space-y-6 bg-gray-800/70 backdrop-blur-lg p-8 rounded-2xl shadow-2xl text-left">
+          <p><strong>Email:</strong> ponmadhan1122@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9943244480</p>
+          <p><strong>Location:</strong> Coimbatore, Tamil Nadu, India</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("nVMmCY1ohYunfze5i");
+  
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      const btn = document.getElementById("send-btn");
+      const rect = btn.getBoundingClientRect();
+  
+      const mailIcon = document.createElement("div");
+      mailIcon.innerHTML = "✉️"; 
+      mailIcon.style.position = "fixed";
+      mailIcon.style.left = rect.left + rect.width / 2 + "px";
+      mailIcon.style.top = rect.top + rect.height / 2 + "px";
+      mailIcon.style.fontSize = "2rem";
+      mailIcon.style.zIndex = "9999";
+      mailIcon.style.transition = "transform 1.5s ease-in-out, opacity 1.5s ease-in-out";
+      document.body.appendChild(mailIcon);
+  
+      setTimeout(() => {
+        mailIcon.style.transform = `translate(${window.innerWidth - rect.left - 50}px, -${rect.top + 100}px) rotate(720deg)`;
+        mailIcon.style.opacity = "0";
+      }, 50);
+  
+      setTimeout(() => mailIcon.remove(), 1600);
+  
+      emailjs.sendForm("service_u2bvvbs", "template_3f9zzfa", this)
+        .then(() => {
+          this.reset();
+          const toast = document.createElement("div");
+          toast.innerText = "✅ Message sent successfully!";
+          toast.className = "fixed top-5 right-5 bg-teal-500 text-white px-6 py-3 rounded-lg shadow-lg animate-fadeIn";
+          document.body.appendChild(toast);
+          setTimeout(() => toast.remove(), 4000);
+        }, (error) => {
+          console.error(error);
+          alert("❌ Failed to send message. Try again.");
+        });
+  
+    });
+  </script>
+  
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.5s ease forwards;
+    }
+  </style>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    <p>© 2025 Ponmadhan D. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
